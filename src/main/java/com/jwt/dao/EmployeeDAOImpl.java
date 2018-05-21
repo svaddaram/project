@@ -15,6 +15,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	private SessionFactory sessionFactory;
 
 	public void addEmployee(Employee employee) {
+		System.out.println("tester");
 		sessionFactory.getCurrentSession().saveOrUpdate(employee);
 
 	}
