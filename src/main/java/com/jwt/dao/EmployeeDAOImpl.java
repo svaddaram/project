@@ -34,7 +34,6 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 		if (null != employee) {
 			this.sessionFactory.getCurrentSession().delete(employee);
 		}
-
 	}
 
 	public Employee getEmployee(int empid) {
